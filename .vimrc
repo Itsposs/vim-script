@@ -2,20 +2,20 @@ if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
    set fileencodings=ucs-bom,utf-8,latin1
 endif
 
-set nocompatible	" Use Vim defaults (much better!)
-set bs=indent,eol,start		" allow backspacing over everything in insert mode
-set ai			" always set autoindenting on
-set cindent
+set nocompatible	    " Use Vim defaults (much better!)
+set bs=indent,eol,start " allow backspacing over everything in insert mode
+set autoindent		    " always set autoindenting on
+set smartindent         " always set smartindenting on
 set number              " always show the number of each line
-set cursorline          "   
+set cursorline          " always show current line highlight
 set showmatch           " keep show process of match
 set tabstop=4           " 
 set shiftwidth=4        " 
 set softtabstop=4       " 
-" set backup		" keep a backup file
+" set backup		    " keep a backup file
 set viminfo='20,\"50	" read/write a .viminfo file, don't store more than 50 lines of registers
-set history=50		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
+set history=50		    " keep 50 lines of command line history
+set ruler		        " show the cursor position all the time
 
 " set the untime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -87,7 +87,7 @@ Plugin 'luochen1990/rainbow'
 let g:rainbow_active = 1 " 0 if you want to enable it later via :RainbowToggle
 
 " a light and configurable statusline/tabline plugin
-Plugin 'itchyny/lightline'
+Plugin 'itchyny/lightline.vim'
 " easy configure color
 set laststatus=2
 
