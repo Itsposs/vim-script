@@ -18,7 +18,8 @@ set softtabstop=4       "
 set viminfo='20,\"50	" read/write a .viminfo file, don't store more than 50 lines of registers
 set history=50		    " keep 50 lines of command line history
 set ruler		        " show the cursor position all the time
-
+set report=0            " show which line is modified when use :commands
+set confirm             " require confirm when modified file and without save file
 
 " file encoding
 set encoding=utf-8
